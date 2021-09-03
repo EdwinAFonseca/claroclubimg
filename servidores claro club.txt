@@ -1,0 +1,41 @@
+Ip's:
+
+190.85.217.108
+190.85.217.109
+190.85.217.111
+190.85.217.112
+
+Usuario: lqimg
+Clave: F0t*u5IGT3O2*odkcx
+
+
+Para realizar la replicación de imágenes radica en dos ubicaciones específicas, se debe dirigir a la ruta:
+
+/var/www/html/claroclub/storage/app/public
+
+Esta ruta es donde están alojadas las imágenes correspondientes a las cargas de
+
+
+	
+Empresas
+	
+Beneficios
+	
+Categorías
+	
+Bancos
+	
+Campañas
+	
+Perfiles
+
+
+Para los sliders, se tiene otra ubicación, la siguiente:
+
+/var/www/html/claroclub/public/img/slidershome
+
+ 
+
+La idea es que, por medio de FileZilla, WinSCP o el gestor SFTP, se descargue las imágenes nuevas del servidor con terminación 108 que es donde se conecta el Admin, y luego se replican las imágenes nuevas en los mismos directorios de los servidores con terminación 109, 111 y 112.
+
+Algo que hago es descargar todas las imágenes, luego ordeno los archivos a más recientes, al realizar la replicación, me doy cuenta del ultimo archivo creado/modificado para replicarlos en los demás servidores.
